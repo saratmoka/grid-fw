@@ -12,7 +12,7 @@ Date: 15 May 2025
 """
 Example 1:
     
-This python code provides Example 1 results in Table 2 in the neurips submission titled:
+This python code provides Example 1 results in Table 2 in the paper titled:
 "A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection".
 by Moka, Quiroz, Asimit, and Muller
 """

@@ -11,7 +11,7 @@ Date: 15 May 2025
 """
 Table 1:
     
-This python code provides results in Table 1 in the NeurIPS submission titled:
+This python code provides results in Table 1 in the paper titled:
 "A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection".
 by Moka, Quiroz, Asimit, and Muller
 """
