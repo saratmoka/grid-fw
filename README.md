@@ -6,13 +6,18 @@ This repository provides a Python implementation of our method Grid-FW proposed 
 
 # Python Dependencies (Grid-FW)
 Python >= 3.12.2
+
 Numpy >= 2.2.4
+
 Pandas >= 2.2.3
+
 SciPy >= 1.14.1
 
 # Julia Dependencies (CPLEX)
 JuMP >= 0.22.3
+
 CPLEX >= 0.8.1
+
 Julia >= 1.2
 
 
@@ -20,17 +25,23 @@ Julia >= 1.2
 Download this repository and extract into a folder, which will contain:
 
 data             : contains all the datasets used in our applications
+
 results.xlsx     : This excel file contains all the experiment results presented in Table 2 of the paper
 
 portfolio.py     : contains all the functions required to execute Grid-FW algorithm
+
 main.py          : general code for importing portfolio.py to execute the algorithm
+
 table1.py        : run this to obtain the results of Table 1 in the paper
+
 example1.py      : run this to obtain the results of Grid-FW for Example 1 in Table 2 of the paper
+
 example2.py      : run this to obtain the results of Grid-FW for Example 2 in Table 2 of the paper
-example3.py      : run this to obtain the results of Grid-FW for Example 3 in Table 2 of the paper. 
+
+example3.py      : run this to obtain the results of Grid-FW for Example 3 in Table 2 of the paper
                    
 
-main.ipynb       : all the above experiments are collected in a Jupyter notebook.
+main.ipynb       : all the above experiments are collected in a Jupyter notebook
 
 big-M-cplex.jl   : Julia code for executing the sparse portfolio via CPLEX Big-M approach
 
