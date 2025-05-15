@@ -30,7 +30,11 @@ table1.py       : run this to obtain the results of Table 1 in the paper
 example1.py     : run this to get Grid-FW results for Example 1 in Table 2
 example2.py     : run this to get Grid-FW results for Example 2 in Table 2
 example3.py     : run this to get Grid-FW results for Example 3 in Table 2
+```
+```
 main.ipynb      : Jupyter notebook combining all the above experiments
+```
+```
 big-M-cplex.jl  : Julia code for sparse portfolio via CPLEX Big-M approach
 ```
 
