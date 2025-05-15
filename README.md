@@ -1,2 +1,45 @@
 # Grid-FW
 A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
+
+
+This repository provides a Python implementation of our method Grid-FW proposed in <arXiv paper link>. It also provides Julia code used for executing the Big-M approach using CPLEX to compare our method. 
+
+# Python Dependencies (Grid-FW)
+Python >= 3.12.2
+Numpy >= 2.2.4
+Pandas >= 2.2.3
+SciPy >= 1.14.1
+
+# Julia Dependencies (CPLEX)
+JuMP >= 0.22.3
+CPLEX >= 0.8.1
+Julia >= 1.2
+
+
+# Download Instructions
+Download this repository and extract into a folder, which will contain:
+
+data             : contains all the datasets used in our applications
+results.xlsx     : This excel file contains all the experiment results presented in Table 2 of the paper
+
+portfolio.py     : contains all the functions required to execute Grid-FW algorithm
+main.py          : general code for importing portfolio.py to execute the algorithm
+table1.py        : run this to obtain the results of Table 1 in the paper
+example1.py      : run this to obtain the results of Grid-FW for Example 1 in Table 2 of the paper
+example2.py      : run this to obtain the results of Grid-FW for Example 2 in Table 2 of the paper
+example3.py      : run this to obtain the results of Grid-FW for Example 3 in Table 2 of the paper. 
+                   
+
+main.ipynb       : all the above experiments are collected in a Jupyter notebook.
+
+big-M-cplex.jl   : Julia code for executing the sparse portfolio via CPLEX Big-M approach
+
+
+# Execution Instructions
+Run each Python file according to the instructions provided in the comments. Alternatively, open main.ipynb in Jupyter and follow the instructions. 
+
+
+# Important Notes
+  1. A license is needed to run CPLEX.
+  2. The third synthetic dataset with p = 3000 used in Example 3 in Table 2 is NOT included in the supplementary material due to 100MB upload limitation on submission. 
+ 
