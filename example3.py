@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Author: Sarat Moka
+Email: s.moka@unsw.edu.au
+Website: saratmoka.com
+Affiliation: The University of New South Wales
+Date: 15 May 2025
+"""
+
+"""
 Example 2:
 
 This python code provides Example 2 results in Table 2 in the neurips submission titled:
 "A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection".
+by Moka, Quiroz, Asimit, and Muller
 
 Note that the third synthetic dataset with p = 3000 used in this example is NOT included in 
-the supplementary material due to 100MB upload limitation on submission. 
+the github repository due to over size issue. 
 """
 #
 """
