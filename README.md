@@ -41,8 +41,9 @@ big-M-cplex.jl  : Julia code for sparse portfolio via CPLEX Big-M approach
 
 
 # Execution Instructions
-Run each Python file according to the instructions provided in the comments. Alternatively, open main.ipynb in Jupyter and follow the instructions. 
-
+There are two ways you can execute Grid-FW:
+  1. [Open main.ipynb](./main.ipynb) in Jupyter and follow the instructions given on the notebook.
+  2. Alternatively, run each Python file according to the instructions provided in the comments.
 
 # Important Notes
   1. A license is needed to run CPLEX.
