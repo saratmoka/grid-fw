@@ -1,4 +1,13 @@
 """
+Author: Sarat Moka
+Email: s.moka@unsw.edu.au
+Website: saratmoka.com
+Affiliation: The University of New South Wales
+Date: 15 May 2025
+"""
+
+
+"""
 Packages required
 """
 import numpy as np

@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+"""
+Author: Sarat Moka
+Email: s.moka@unsw.edu.au
+Website: saratmoka.com
+Affiliation: The University of New South Wales
+Date: 15 May 2025
+"""
+
 """
 This file provides a general instrusction on how to run the Grid-FW method in python. 
 The Grid-FW method is proposed in the NeurIPS submission titled:
