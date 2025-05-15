@@ -1,7 +1,7 @@
 # Grid-FW
 A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
 
-<img src="media/path_animation.gif" width="600" />
+<img src="./path_animation.gif" width="600" />
 
 
 This repository provides a Python implementation of our method Grid-FW proposed in <arXiv paper link>. It also provides Julia code used for executing the Big-M approach using CPLEX to compare our method. 
