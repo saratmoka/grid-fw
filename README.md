@@ -1,11 +1,31 @@
 # Grid-FW
-A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
+## A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
+This repository provides a Python implementation of our method Grid-FW proposed in [arXiv paper](https://arxiv.org/abs/2505.10099). It also provides Julia code used for executing the Big-M approach using CPLEX to compare our method. 
+
+## Sparse Minimum-Variance Portfolio Selection
+
+The minimum-variance optimization yields dense portfolios, assigning nonzero weights to all assets. In many applications, some weights may be very small, and ideally such assets should be excluded to avoid transaction costs. The **sparse portfolio selection** problem enforces a constraint on the number of selected assets by formulating the problem as:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{\beta} \in \mathbb{R}^p} & \quad \boldsymbol{\beta}^\top \Sigma \boldsymbol{\beta} \\
+\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \\
+& \quad \|\boldsymbol{\beta}\|_0 \leq k
+\end{aligned}
+$$
+
+where:
+- $\boldsymbol{\beta} \in \mathbb{R}^p$ is the portfolio weight vector
+- $\Sigma \in \mathbb{R}^{p \times p}$ is the asset covariance matrix
+- $\|\boldsymbol{\beta}\|_0$ counts the number of non-zero elements (the $\ell_0$-"norm")
+- $k \geq 1$ is the sparsity constraint (maximum number of assets to include)
+
+This is an NP-hard problem. 
 
 <div align="center">
-	<img src="./path_animation.gif" width="500" />
+	<img src="./gifs/path_animation.gif" width="500" />
 </div>
 
-This repository provides a Python implementation of our method Grid-FW proposed in [arXiv paper](https://arxiv.org/abs/2505.10099). It also provides Julia code used for executing the Big-M approach using CPLEX to compare our method. 
 
 # Python Dependencies (Grid-FW)
 ```
