@@ -24,7 +24,7 @@ This problem is \textsc{NP}-hard: exhaustive search over all $\binom{p}{k}$ asse
 In time-constrained settings, we terminate \texttt{CPLEX} or \texttt{Gurobi} after a preset time limit, yielding the best incumbent solution without optimality guarantees. This raises the question:
 
 $$
-\text{Given a time budget }T,\ \text{what is the best feasible suboptimal solution attainable within }T\;?
+\text{Given a time budget }T,\ \text{what is the best feasible suboptimal solution attainable within }T\,?
 $$
 
 
