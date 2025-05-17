@@ -9,8 +9,7 @@ The minimum-variance optimization yields dense portfolios, assigning nonzero wei
 $$
 \begin{aligned}
 \min_{\boldsymbol{\beta} \in \mathbb{R}^p} & \quad \boldsymbol{\beta}^\top \Sigma \boldsymbol{\beta} \\
-\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \\
-& \quad \|\boldsymbol{\beta}\|_0 \leq k
+\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \,\,\, \|\boldsymbol{\beta}\|_0 \leq k
 \end{aligned}
 $$
 
@@ -20,7 +19,13 @@ where:
 - $\|\boldsymbol{\beta}\|_0$ counts the number of non-zero elements (the $\ell_0$-"norm")
 - $k \geq 1$ is the sparsity constraint (maximum number of assets to include)
 
-This is an NP-hard problem. 
+This problem is \textsc{NP}-hard: exhaustive search over all $\binom{p}{k}$ asset subsets becomes infeasible even for moderate $p$ and $k$. A common exact approach reformulates it as a Big-$M$ mixed‐integer program and applies branch-and-bound solvers (e.g., CPLEX, Gurobi), but despite dramatic speedups over brute force, optimality gurantees of these methods can still require hours or days.
+
+In time-constrained settings, we terminate \texttt{CPLEX} or \texttt{Gurobi} after a preset time limit, yielding the best incumbent solution without optimality guarantees. This raises the question:
+\[
+\text{Given a time budget }T,\ \text{what is the best feasible suboptimal solution attainable within }T\;?
+\]
+
 
 <div align="center">
 	<img src="./gifs/path_animation.gif" width="500" />
