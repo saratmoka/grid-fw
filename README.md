@@ -40,7 +40,7 @@ Our method—a variant of the Frank–Wolfe (conditional gradient) algorithm—o
 
 In practice, our method matches commercial solvers in asset selection for most instances and, in rare instances, the solution differs by a few assets whilst showing a negligible error in portfolio variance. 
 
-Following is an illustration of our method for simple 2-dimensional example when $k =1$.
+Following is an illustration of our method for simple 2-dimensional example when $k =1$ (i.e., select one optimal assert from p = 2 asserts). Observe that as $\delta$ increasing, the surface of the objective function is transforming towards concavity. 
 
 <div align="center">
 	<img src="./gifs/3d-convergence.gif" width="500" />
