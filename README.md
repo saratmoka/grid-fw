@@ -7,7 +7,7 @@ The minimum-variance optimization yields dense portfolios, assigning nonzero wei
 $$
 \begin{aligned}
 \min_{\boldsymbol{\beta} \in \mathbb{R}^p} & \quad \boldsymbol{\beta}^\top \Sigma \boldsymbol{\beta} \\
-\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \,\,\, \|\boldsymbol{\beta}\|_0 \leq k
+\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \quad \|\boldsymbol{\beta}\|_0 \leq k
 \end{aligned}
 $$
 
