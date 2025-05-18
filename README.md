@@ -14,7 +14,7 @@ $$
 where:
 - $\boldsymbol{\beta} \in \mathbb{R}^p$ is the portfolio weight vector
 - $\Sigma \in \mathbb{R}^{p \times p}$ is the asset covariance matrix
-- $ &#x2016 \boldsymbol{\beta} &#x2016 _0$ counts the number of non-zero elements (the $\ell_0$-"norm")
+- $ &#x2016\boldsymbol{\beta}&#x2016_0$ counts the number of non-zero elements (the $\ell_0$-"norm")
 - $k \geq 1$ is the sparsity constraint (maximum number of assets to include)
 
 This problem is NP-hard: exhaustive search over all $\binom{p}{k}$ asset subsets becomes infeasible even for moderate $p$ and $k$. A common exact approach reformulates it as a Big-M mixed‐integer program and applies branch-and-bound solvers (e.g., CPLEX, Gurobi), but despite dramatic speedups over brute force, optimality gurantees of these methods can still require hours or days.
