@@ -10,6 +10,7 @@ $$
 \text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \quad &#x2016\boldsymbol{\beta}&#x2016_0 \leq k
 \end{aligned}
 $$
+
 where:
 - $\boldsymbol{\beta} \in \mathbb{R}^p$ is the portfolio weight vector
 - $\Sigma \in \mathbb{R}^{p \times p}$ is the asset covariance matrix
