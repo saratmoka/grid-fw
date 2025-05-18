@@ -31,7 +31,8 @@ In time-constrained settings, we terminate <span style="font-family:monospace">C
   </tr>
 </table>
 
-Our method—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
+Our approach guarantees optimality in theory, and in practice its Frank–Wolfe–based implementation runs efficiently to produce high-quality approximate solutions.
+
 
 # Grid-FW
 #### A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
