@@ -103,3 +103,6 @@ There are two ways you can execute Grid-FW:
   1. A license is needed to run CPLEX.
   2. The third synthetic dataset with p = 3000 used in Example 3 in Table 2 is NOT included in here due to its size being more than 350MB. 
  
+## Reference
+
+Moka, Quiroz, Asimit, and Muller (2025) *A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection* [arXiv paper](https://arxiv.org/abs/2505.10099).
