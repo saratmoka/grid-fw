@@ -38,7 +38,7 @@ In practice, our method matches commercial solvers in asset selection for most i
 	<img src="./gifs/3d-convergence.gif" width="500" />
 </div>
 
-For a dataset of $p=31$ asserts provided in the folder [data/example1](./data/example1/), below figure shows how $t_j$'s converge a binary vector with ones corresponds to optimal asserts at $k=4$.
+For a dataset of $p=31$ asserts provided in the folder [data/example1](./data/example1/), below figure shows how $t_j$'s converge the binary vector with ones corresponds to optimal asserts at $k=4$.
 
 <div align="center">
 	<img src="./gifs/path_animation.gif" width="500" />
