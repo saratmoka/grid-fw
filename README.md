@@ -19,19 +19,19 @@ where:
 
 This problem is NP-hard: exhaustive search over all $\binom{p}{k}$ asset subsets becomes infeasible even for moderate $p$ and $k$. A common exact approach reformulates it as a Big-M mixed‐integer program and applies branch-and-bound solvers (e.g., CPLEX, Gurobi), but despite dramatic speedups over brute force, optimality gurantees of these methods can still require hours or days.
 
-In time-constrained settings, we terminate <span style="font-family:monospace">CPLEX</span>  or <span style="font-family:monospace">Gurobi</span> after a preset time limit, yielding the best incumbent solution without optimality guarantees. This raises the question:
+In time-constrained settings, we terminate <span style="font-family:monospace">CPLEX</span>  or <span style="font-family:monospace">Gurobi</span> after a preset time limit, yielding the best incumbent solution without optimality guarantees. This leads to our goal:
 
 <table align="center">
   <tr>
     <td align="center" style="border:2px solid #0366d6; padding:15px; border-radius:8px; background:#f6f8fa;">
       <div style="font-size:1.1em; font-family:CMU Serif, Latin Modern, serif;">
-        How to obtain a best feasible suboptimal solution attainable within a time budget?
+        Develop a method that provides a suboptimal solution better than these commericial solvers quickly.
       </div>
     </td>
   </tr>
 </table>
 
-Our method **Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
+In particular, our method **Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
 
 ## Grid-FW
 #### A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
