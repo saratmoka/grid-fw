@@ -49,7 +49,7 @@ Following is an illustration of our method for simple 2-dimensional example when
 <div> 
 </div>
 
-For a dataset of p = 31 assets in the [data/example1](./data/example1/) folder, the figure below shows how the values `t_j` converge to the (optimal) binary vector with indices of ones in the vector correspond to the optimal assets for `k = 4`. Here, &ell denotes the iteration number.
+For a dataset of p = 31 assets in the [data/example1](./data/example1/) folder, the figure below shows how the values `t_j` converge to the (optimal) binary vector with indices of ones in the vector correspond to the optimal assets for `k = 4`. Here, ℓ denotes the iteration number.
 
 
 <div align="center">
