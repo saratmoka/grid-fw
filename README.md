@@ -25,7 +25,7 @@ In time-constrained settings, we terminate <span style="font-family:monospace">C
   <tr>
     <td align="center" style="border:2px solid #0366d6; padding:15px; border-radius:8px; background:#f6f8fa;">
       <div style="font-size:1.1em; font-family:CMU Serif, Latin Modern, serif;">
-        Develop a method that provides a better solution than these commericial solvers and quickly.
+        Develop a method that provides a better solution than these commericial solvers when time is constrained.
       </div>
     </td>
   </tr>
