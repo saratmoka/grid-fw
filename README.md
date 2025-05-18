@@ -1,6 +1,6 @@
 This repository provides a Python implementation of our method Grid-FW proposed in [arXiv paper](https://arxiv.org/abs/2505.10099). It also provides Julia code used for executing the Big-M approach using CPLEX to compare our method. 
 
-## Sparse Minimum-Variance Portfolio Selection
+# Sparse Minimum-Variance Portfolio Selection
 
 The minimum-variance optimization yields dense portfolios, assigning nonzero weights to all assets. In many applications, some weights may be very small, and ideally such assets should be excluded to avoid transaction costs. The **sparse portfolio selection** problem enforces a constraint on the number of selected assets by formulating the problem as:
 
@@ -33,7 +33,7 @@ In time-constrained settings, we terminate <span style="font-family:monospace">C
 
 Our method—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
 
-## Grid-FW
+# Grid-FW
 #### A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
 
 **Grid-FW** is a gradient-based approach that transforms the NP-hard combinatorial sparse portfolio selection problem into a constrained continuous optimization task via Boolean relaxation, while preserving equivalence with the original problem on the set of binary points. This algorithm employs a tunable parameter $\delta > 0$ that transmutes the auxiliary objective function from convex to concave as it increases. This allows a stable starting point, followed by a controlled path toward a sparse binary solution as $\delta$ increases and the objective moves toward concavity. 
