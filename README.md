@@ -21,9 +21,17 @@ This problem is \textsc{NP}-hard: exhaustive search over all $\binom{p}{k}$ asse
 
 In time-constrained settings, we terminate \texttt{CPLEX} or \texttt{Gurobi} after a preset time limit, yielding the best incumbent solution without optimality guarantees. This raises the question:
 
-$$
-\text{What is the best feasible suboptimal solution attainable within within a time budget?}
-$$
+<table align="center">
+  <tr>
+    <td align="center" style="border:2px solid #0366d6; padding:15px; border-radius:8px; background:#f6f8fa;">
+      <div style="font-size:1.1em; font-family:CMU Serif, Latin Modern, serif;">
+        $$
+        \text{What is the best feasible suboptimal solution attainable within a time budget?}
+        $$
+      </div>
+    </td>
+  </tr>
+</table>
 
 Our method **Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
 
