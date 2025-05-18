@@ -17,17 +17,15 @@ where:
 - $\|\boldsymbol{\beta}\|_0$ counts the number of non-zero elements (the $\ell_0$-"norm")
 - $k \geq 1$ is the sparsity constraint (maximum number of assets to include)
 
-This problem is \textsc{NP}-hard: exhaustive search over all $\binom{p}{k}$ asset subsets becomes infeasible even for moderate $p$ and $k$. A common exact approach reformulates it as a Big-$M$ mixed‐integer program and applies branch-and-bound solvers (e.g., CPLEX, Gurobi), but despite dramatic speedups over brute force, optimality gurantees of these methods can still require hours or days.
+This problem is NP-hard: exhaustive search over all $\binom{p}{k}$ asset subsets becomes infeasible even for moderate $p$ and $k$. A common exact approach reformulates it as a Big-M mixed‐integer program and applies branch-and-bound solvers (e.g., CPLEX, Gurobi), but despite dramatic speedups over brute force, optimality gurantees of these methods can still require hours or days.
 
-In time-constrained settings, we terminate \texttt{CPLEX} or \texttt{Gurobi} after a preset time limit, yielding the best incumbent solution without optimality guarantees. This raises the question:
+In time-constrained settings, we terminate <span style="font-family:monospace">CPLEX</span>  or <span style="font-family:monospace">Gurobi</span> after a preset time limit, yielding the best incumbent solution without optimality guarantees. This raises the question:
 
 <table align="center">
   <tr>
     <td align="center" style="border:2px solid #0366d6; padding:15px; border-radius:8px; background:#f6f8fa;">
       <div style="font-size:1.1em; font-family:CMU Serif, Latin Modern, serif;">
-        $$
-        \text{What is the best feasible suboptimal solution attainable within a time budget?}
-        $$
+        How to obtain a best feasible suboptimal solution attainable within a time budget?
       </div>
     </td>
   </tr>
