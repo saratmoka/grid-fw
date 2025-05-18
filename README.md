@@ -25,8 +25,20 @@ $$
 \text{What is the best feasible suboptimal solution attainable within within a time budget?}
 $$
 
-## Our method: Grid-FW
+Our method **Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
+
+## Grid-FW
 #### A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
+
+**Grid-FW** is a gradient-based approach that transforms the NP-hard combinatorial sparse portfolio selection problem into a constrained continuous optimization task via Boolean relaxation, while preserving equivalence with the original problem on the set of binary points. Our algorithm employs a tunable parameter $\delta > 0$ that transmutes the auxiliary objective from a convex to a concave function. This allows a stable convex starting point, followed by a controlled path toward a sparse binary solution as the tuning parameter increases and the objective moves toward concavity. 
+
+In practice, our method matches commercial solvers in asset selection for most instances and, in rare instances, the solution differs by a few assets whilst showing a negligible error in portfolio variance. Following, simple 2-dimensional example illustrates the our algorithm.
+
+<div align="center">
+	<img src="./gifs/3d-convergence.gif" width="500" />
+</div>
+
+For a dataset of $p=31$ asserts provided in the folder [data/example1](./data/example1/), below figure shows how $t_j$'s converge a binary vector with ones corresponds to optimal asserts at $k=4$.
 
 <div align="center">
 	<img src="./gifs/path_animation.gif" width="500" />
