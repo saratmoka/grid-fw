@@ -7,14 +7,14 @@ The minimum-variance optimization yields dense portfolios, assigning nonzero wei
 $$
 \begin{aligned}
 \min_{\boldsymbol{\beta} \in \mathbb{R}^p} & \quad \boldsymbol{\beta}^\top \Sigma \boldsymbol{\beta} \\
-\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \quad \|\boldsymbol{\beta}\|_0 \leq k
+\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \quad ||\boldsymbol{\beta}||_0 \leq k
 \end{aligned}
 $$
 
 where:
 - $\boldsymbol{\beta} \in \mathbb{R}^p$ is the portfolio weight vector
 - $\Sigma \in \mathbb{R}^{p \times p}$ is the asset covariance matrix
-- $\|\boldsymbol{\beta}\|_0$ counts the number of non-zero elements (the $\ell_0$-"norm")
+- $||\boldsymbol{\beta}||_0$ counts the number of non-zero elements (the $\ell_0$-"norm")
 - $k \geq 1$ is the sparsity constraint (maximum number of assets to include)
 
 This problem is NP-hard: exhaustive search over all $\binom{p}{k}$ asset subsets becomes infeasible even for moderate $p$ and $k$. A common exact approach reformulates it as a Big-M mixed‐integer program and applies branch-and-bound solvers (e.g., CPLEX, Gurobi), but despite dramatic speedups over brute force, optimality gurantees of these methods can still require hours or days.
@@ -31,12 +31,12 @@ In time-constrained settings, we terminate <span style="font-family:monospace">C
   </tr>
 </table>
 
-**Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
+Our method—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
 
 ## Grid-FW
 #### A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
 
-**Grid-FW** is a gradient-based approach that transforms the NP-hard combinatorial sparse portfolio selection problem into a constrained continuous optimization task via Boolean relaxation, while preserving equivalence with the original problem on the set of binary points. Our algorithm employs a tunable parameter $\delta > 0$ that transmutes the auxiliary objective from a convex to a concave function. This allows a stable convex starting point, followed by a controlled path toward a sparse binary solution as the tuning parameter increases and the objective moves toward concavity. 
+**Grid-FW** is a gradient-based approach that transforms the NP-hard combinatorial sparse portfolio selection problem into a constrained continuous optimization task via Boolean relaxation, while preserving equivalence with the original problem on the set of binary points. This algorithm employs a tunable parameter $\delta > 0$ that transmutes the auxiliary objective function from convex to concave as it increases. This allows a stable starting point, followed by a controlled path toward a sparse binary solution as $\delta$ increases and the objective moves toward concavity. 
 
 In practice, our method matches commercial solvers in asset selection for most instances and, in rare instances, the solution differs by a few assets whilst showing a negligible error in portfolio variance. 
 
@@ -46,6 +46,8 @@ Following is an illustration of our method for simple 2-dimensional example when
 	<img src="./gifs/3d-convergence.gif" width="500" />
 </div>
 
+<div> 
+</div>
 For a dataset of $p=31$ asserts provided in the folder [data/example1](./data/example1/), below figure shows how $t_j$'s converge to the binary vector with ones corresponds to optimal asserts at $k=4$.
 
 <div align="center">
