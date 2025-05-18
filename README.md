@@ -48,7 +48,7 @@ Following is an illustration of our method for simple 2-dimensional example when
 
 <div> 
 </div>
-For a dataset of $p=31$ asserts provided in the folder [data/example1](./data/example1/), below figure shows how $t_j$'s converge to the binary vector with ones corresponds to optimal asserts at $k=4$.
+For a dataset of $p=31$ asserts provided in the folder [data/example1](./data/example1/), below figure shows how $t_j$'s convergence to the binary vector with ones corresponds to optimal asserts at $k=4$, where $\ell$ denotes iterations.
 
 <div align="center">
 	<img src="./gifs/path_animation.gif" width="500" />
