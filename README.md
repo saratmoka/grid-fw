@@ -25,13 +25,13 @@ In time-constrained settings, we terminate <span style="font-family:monospace">C
   <tr>
     <td align="center" style="border:2px solid #0366d6; padding:15px; border-radius:8px; background:#f6f8fa;">
       <div style="font-size:1.1em; font-family:CMU Serif, Latin Modern, serif;">
-        Develop a method that provides a suboptimal solution better than these commericial solvers quickly.
+        Develop a method that provides a better solution than these commericial solvers and quickly.
       </div>
     </td>
   </tr>
 </table>
 
-In particular, our method **Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
+**Grid-FW**—a variant of the Frank–Wolfe (conditional gradient) algorithm—offers rigorous optimality guarantees in theory while delivering fast, approximate solutions in practice.
 
 ## Grid-FW
 #### A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection
