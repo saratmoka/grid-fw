@@ -7,7 +7,7 @@ The minimum-variance optimization yields dense portfolios, assigning nonzero wei
 $$
 \begin{aligned}
 \min_{\boldsymbol{\beta} \in \mathbb{R}^p} & \quad \boldsymbol{\beta}^\top \Sigma \boldsymbol{\beta} \\
-\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1 \quad &#x2016\boldsymbol{\beta}&#x2016_0 \leq k
+\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1, \quad &#x2016\boldsymbol{\beta}&#x2016_0 \leq k
 \end{aligned}
 $$
 
@@ -91,8 +91,6 @@ main.ipynb      : Jupyter notebook combining all the above experiments
 ```
 big-M-cplex.jl  : Julia code for sparse portfolio via CPLEX Big-M approach
 ```
-
-
 
 # Execution Instructions
 There are two ways you can execute Grid-FW:
