@@ -137,49 +137,6 @@ def f2(t, Sigma, v, delta, x0, cg_maxiter=None, cg_tol=1e-5):
 def f_grad(t, Sigma, v, delta, gamma, 
             cg_maxiter=None, 
             cg_tol=1e-5):
-    """ 
-    Calculates the gradient of the objective function with respect to parameters t, as well as the 
-    corresponding estimate of beta. Also returns components of the objective function used for recurrent 
-    calls of this function.
-
-    Parameters
-    ----------
-    t: array-like of floats.
-        The t vector used for calculations.
-
-    X: Covarianccce matrix
-
-    v: diagonal of Sigma, i.e., variances of the assets
-    
-    delta: float
-        The value of delta, where delta is a tuning parameter as referenced in the original COMBSS paper. 
-
-    gamma : array-like of floats of shape (n_covariates, 1). Current value is used as starting 
-            point x0 in CG for next call of this function.
-
-    cg_maxiter (Conjugate gradient parameter) : int
-        The maximum number of iterations for the conjugate gradient algortihm used 
-        to approximate the gradient of the function with respect to t and the gradient 
-        of the objective function with respect to beta before the conjugate gradient 
-        algorithm terminates.
-        Default value = None.
-
-    cg_tol (Conjugate gradient parameter) : float
-        The acceptable tolerance used for the termination condition in the conjugate gradient 
-        algortihms used to approximate the gradient of the function with respect to t and the 
-        gradient of the objective function with respect to beta.
-        Default value = 1e5.
-
-    
-    Returns
-    -------
-    grad : array-like of floats (n_covariates, 1).
-        The derivative of the objective function with respect to t.
-
-    gamma : array-like of floats of shape (n_covariates, 1).
-        The associated value of upsilon with respect to the existing ts.
-
-    """
     
     p = t.shape[0]
     
