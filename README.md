@@ -102,5 +102,15 @@ There are two ways you can execute Grid-FW:
   2. The third synthetic dataset with p = 3000 used in Example 3 in Table 2 is NOT included in here due to its size being more than 350MB. 
  
 ## Reference
-
 Moka, Quiroz, Asimit, and Muller (2025) *A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection* [arXiv paper](https://arxiv.org/abs/2505.10099).
+
+## Citation
+If you use Grid-FW method for your research, please cite:
+```
+@article{moka2025scalable,
+  title={A Scalable Gradient-Based Optimization Framework for Sparse Minimum-Variance Portfolio Selection},
+  author={Moka, Sarat and Quiroz, Matias and Asimit, Vali and Muller, Samuel},
+  journal={arXiv preprint arXiv:2505.10099},
+  year={2025}
+}
+```
