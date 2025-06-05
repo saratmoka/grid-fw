@@ -7,13 +7,13 @@ The minimum-variance optimization yields dense portfolios, assigning nonzero wei
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{\beta} \in \mathbb{R}^p} & \quad \boldsymbol{\beta}^\top \Sigma \boldsymbol{\beta} \\
-\text{s.t.} & \quad \boldsymbol{1}^\top \boldsymbol{\beta} = 1, \quad &#x2016\boldsymbol{\beta}&#x2016_0 \leq k
+\min_{\beta \in \mathbb{R}^p} & \quad \beta^\top \Sigma \beta \\
+\text{s.t.} & \quad 1^\top \beta = 1, \quad &#x2016\beta&#x2016_0 \leq k
 \end{aligned}
 $$
 
 where:
-- $\boldsymbol{\beta} \in \mathbb{R}^p$ is the portfolio weight vector
+- $\beta \in \mathbb{R}^p$ is the portfolio weight vector
 - $\Sigma \in \mathbb{R}^{p \times p}$ is the asset covariance matrix
 - &#x2016;β&#x2016;<sub>0</sub> counts the number of non-zero elements (the $\ell_0$-"norm")
 - $k \geq 1$ is the sparsity constraint (maximum number of assets to include)
