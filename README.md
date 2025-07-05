@@ -1,3 +1,9 @@
+<img src="logo.png" alt="COMBSS Logo" width="200" style="
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.05));
+">
+
 
 This repository provides a Python implementation of our method Grid-FW proposed in [arXiv paper](https://arxiv.org/abs/2505.10099). It also provides Julia code used for executing the Big-M approach using CPLEX to compare our method. 
 
