@@ -1,4 +1,4 @@
-<img src="logo.png" alt="COMBSS Logo" width="200" style="
+<img src="gridfw_logo.png" alt="Grid-FW Logo" width="200" style="
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.05));
